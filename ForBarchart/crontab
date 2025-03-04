@@ -1,0 +1,1 @@
+10 1,9,12,18 * * * cd /forbarchart_cronjob && /usr/local/bin/python forbarchart.py >> cron.log 2>&1

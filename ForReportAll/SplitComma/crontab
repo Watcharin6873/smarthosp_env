@@ -1,0 +1,1 @@
+0 5,10,16,19 * * * cd /splitcomma_cronjob && /usr/local/bin/python splitcomma.py >> cron.log 2>&1

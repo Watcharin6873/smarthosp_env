@@ -1,0 +1,8 @@
+/.ipynb_checkpoints
+/Data.xlsx
+/Pipfile
+/Pipfile.lock
+/evaluate_report.ipynb
+/evaluate_results.ipynb
+/requirements.txt
+/sumevaluate_for_barchart.ipynb

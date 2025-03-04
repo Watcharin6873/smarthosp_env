@@ -1,0 +1,1 @@
+30 5,10,16,19 * * * cd /update_choice_cronjob && /usr/local/bin/python update_choice.py >> cron.log 2>&1

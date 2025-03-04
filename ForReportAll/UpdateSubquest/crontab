@@ -1,0 +1,1 @@
+15 5,10,16,19 * * * cd /update_subquest_cronjob && /usr/local/bin/python update_subquest.py >> cron.log 2>&1

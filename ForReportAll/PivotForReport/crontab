@@ -1,0 +1,1 @@
+45 5,10,16,19 * * * cd /pivot_report_cronjob && /usr/local/bin/python report_for_report.py >> cron.log 2>&1

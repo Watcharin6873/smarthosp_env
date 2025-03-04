@@ -1,0 +1,1 @@
+5 1,9,12,18 * * * cd /smarthosp_cronjob && /usr/local/bin/python evaluate_results.py >> cron.log 2>&1
