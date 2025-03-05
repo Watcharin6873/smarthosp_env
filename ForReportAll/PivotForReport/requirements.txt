@@ -3,3 +3,4 @@ pymysql
 sqlalchemy
 requests
 pytz
+openpyxl

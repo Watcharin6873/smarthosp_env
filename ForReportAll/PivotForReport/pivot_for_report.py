@@ -3,6 +3,8 @@ import sqlalchemy as sa
 from urllib.parse import quote
 import datetime
 import pytz
+import os
+import openpyxl
 
 tz_bangkok = pytz.timezone('Asia/Bangkok')
 
@@ -70,7 +72,7 @@ data3 = new_data[['เขตสุขภาพ', 'รหัสจังหวั
 '4.2.7','4.2.8','4.3.1','4.3.2','4.3.3','4.4.1','4.4.2','วันที่ประมวลผล']]
 
 
-directory ='/home/bdhdev1/smarthospital_quest/smarthosp_quest/src/assets/excel_exports'
+directory ='/home/bdhdev1/smarthospital_quest/server/cyber-image'
 filename = 'Report_all.xlsx'
 filepath = os.path.join(directory, filename)
 
