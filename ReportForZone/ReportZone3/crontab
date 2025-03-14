@@ -1,0 +1,1 @@
+38 5,10,16,19 * * * cd /report_zone3_cronjob && /usr/local/bin/python report_zone3.py >> cron.log 2>&1

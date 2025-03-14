@@ -1,0 +1,6 @@
+pandas
+pymysql
+sqlalchemy
+requests
+pytz
+openpyxl
