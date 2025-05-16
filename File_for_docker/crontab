@@ -1,1 +1,1 @@
-5 6-19 * * * cd /smarthosp_cronjob && /usr/local/bin/python evaluate_results.py >> cron.log 2>&1
+5 6-23 * * * cd /smarthosp_cronjob && /usr/local/bin/python evaluate_results.py >> cron.log 2>&1

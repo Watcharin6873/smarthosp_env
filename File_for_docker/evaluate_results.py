@@ -19,6 +19,7 @@ query = """
     SUBSTRING_INDEX(SUBSTRING_INDEX(t.check, ',', n.n), ',', -1) AS c_check FROM Evaluate t CROSS JOIN (SELECT a.N + b.N * 10 + 1 n FROM (SELECT 0 AS N UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4) a ,(SELECT 0 AS N UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4) b ORDER BY n ) n WHERE n.n <= 1 + (LENGTH(t.check) - LENGTH(REPLACE(t.check, ',', ''))) ORDER BY id,c_check) AS t1 
     LEFT JOIN Sub_quest_list AS t2 ON t1.sub_questId = t2.sub_questId AND t1.c_check = t2.choice 
     LEFT JOIN Cyber_risk_level AS t3 ON t1.hcode = t3.hcode 
+    WHERE t1.t1.ssj_approve = TRUE
     GROUP BY t1.category_questId,t1.hcode,t3.cyber_level, t3.cyber_levelname,t1.ssj_approve,t1.zone_approve
     ORDER BY t1.category_questId ASC
 """
